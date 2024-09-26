@@ -104,17 +104,13 @@ footer{
 }
 
 /*Your Code Here*/
-
-@media screen and (min-width: 600px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    row-gap: 15px;
+    grid-gap: 15px;
   }
-  .container > :first-child {
-    grid-column: 1 / span 3;
-  }
-  .parallax-container > :first-child { /* step 5b */
+  .container div:first-child {
+    grid-column: 1 / -1;
     background-image: url(/images/header.jpg);
   }
   .about {
@@ -159,13 +155,13 @@ footer{
     grid-row: 5 / 6;
   }
   .text-block {
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
+    align-self: center;
     text-align: center;
   }
-}
 
-@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 800px) {
   nav {
     text-align: right;
     padding: 30px 0;
@@ -174,6 +170,7 @@ footer{
   .container {
     display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
+    grid-gap: 15px;
   }
 
   .about {
@@ -210,7 +207,6 @@ footer{
 
   .text-block {
     max-height: 250px;
-    align-items: center;
     overflow: scroll;
   }
 }
