@@ -10,8 +10,9 @@ body{
   padding: 0;
 }
 
+
 .overview{
-  background-attachment: fixed; /* Parallax effect */
+  background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
@@ -45,26 +46,20 @@ nav li{
 
 }
 
-nav a:hover, nav a:focus{
+nav a{
   color: black;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none; 
 }
 
 
-.skip {
+.skip a{
   background: white;
   left: 0;
   padding: 6px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  position: relative;
-  top: -40px;
-}
-.skip:focus {
-  top: -20px;
-  border: 2px solid black;
 }
 
 
